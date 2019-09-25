@@ -4,7 +4,7 @@
 # ms-python.python added
 import os
 try:
-	os.chdir(os.path.join(os.getcwd(), 'Exploring 67 years of LEGO'))
+	os.chdir(os.path.join(os.getcwd(), 'project-disney\\Exploring 67 years of LEGO'))
 	print(os.getcwd())
 except:
 	pass
@@ -83,8 +83,3 @@ print(themes_by_year.head(5))
 #%% [markdown]
 # ## 7. Wrapping It All Up!
 # <p>Lego blocks offer an unlimited amount of fun across ages. We explored some interesting trends around colors, parts, and themes. </p>
-
-#%%
-# Nothing to do here
-
-

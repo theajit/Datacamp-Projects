@@ -4,7 +4,7 @@
 # ms-python.python added
 import os
 try:
-	os.chdir(os.path.join(os.getcwd(), 'Disney Movies and Box Office Success'))
+	os.chdir(os.path.join(os.getcwd(), 'project-disney\\Disney Movies and Box Office Success'))
 	print(os.getcwd())
 except:
 	pass
@@ -41,7 +41,7 @@ inflation_adjusted_gross_desc.head(10)
 
 #%%
 # Extract year from release_date and store it in a new column
-gross['release_year'] = pd.DatetimeIndex(gross['release_date']).year
+gross['release_year'] = pd.DatetimeIndex(gross['release_date'])
 
 # Compute mean of adjusted gross per genre and per year
 group = gross.groupby(['genre','release_year']).mean()
@@ -162,13 +162,3 @@ print(confidence_interval_adventure)
 #%%
 # should Disney studios make more action and adventure movies? 
 more_action_adventure_movies = True
-
-
-#%%
-
-
-
-#%%
-
-
-

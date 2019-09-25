@@ -4,7 +4,7 @@
 # ms-python.python added
 import os
 try:
-	os.chdir(os.path.join(os.getcwd(), 'Generating Keywords for Google Ads'))
+	os.chdir(os.path.join(os.getcwd(), 'project-adwords\\Generating Keywords for Google Ads'))
 	print(os.getcwd())
 except:
 	pass
